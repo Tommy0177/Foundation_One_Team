@@ -53,14 +53,37 @@
         <!-- end preloader -->
 
         <!-- Start header -->
+        <style>
+            #navbar-toggle {
+                display: block !important; /* Display on all devices */
+            }
+    
+            @media (min-width: 992px) { /* Large devices */
+                #navbar-toggle {
+                    display: block !important; /* Explicitly set display for large devices */
+                }
+            }
+    
+            @media (min-width: 768px) and (max-width: 991.98px) { /* Medium devices */
+                #navbar-toggle {
+                    display: block !important; /* Explicitly set display for medium devices */
+                }
+            }
+    
+            @media (max-width: 767.98px) { /* Small devices */
+                #navbar-toggle {
+                    display: block !important; /* Explicitly set display for small devices */
+                }
+            }
+        </style>
         <header id="header">
             <div class="wpo-site-header wpo-site-header-s1">
                 <nav class="navigation navbar navbar-expand-lg navbar-light">
                     <div class="container-fluid">
                         <div class="row align-items-center">
-                            <div class="col-lg-3 col-md-4 col-3 d-lg-none dl-block">
+                            <div class="col-lg-4 col-md-4 col-3 d-block" >
                                 <div class="mobail-menu">
-                                    <button type="button" class="navbar-toggler open-btn">
+                                    <button id="navbar-toggle" type="button" class="navbar-toggler open-btn" >
                                         <span class="sr-only">Toggle navigation</span>
                                         <span class="icon-bar first-angle"></span>
                                         <span class="icon-bar middle-angle"></span>
@@ -68,13 +91,14 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-4 col-6">
+                            
+                            <div class="col-lg-4 col-md-4 col-6">
                                 <div class="navbar-header">
                                     <a class="navbar-brand" href="index.html">LOGO</a>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-1 col-1">
-                                <div id="navbar" class="collapse navbar-collapse navigation-holder">
+                            <div class="col-lg-2 col-md-1 col-1">
+                                <div id="navbar" class="collapse navbar-collapse navigation-holder  ">
                                     <button class="menu-close"><i class="ti-close"></i></button>
                                     <ul class="nav navbar-nav mb-2 mb-lg-0">
                                        
@@ -111,33 +135,7 @@
                             </div>
                             <div class="col-lg-2 col-md-2 col-2">
                                 <div class="header-right">
-                                    <!--
-                                    <div class="header-search-form-wrapper">
-                                        <div class="cart-search-contact">
-                                            <button class="search-toggle-btn"><i
-                                                    class="fi flaticon-search"></i></button>
-                                            <div class="header-search-form">
-                                                <form>
-                                                    <div>
-                                                        <input type="text" class="form-control"
-                                                            placeholder="Search here...">
-                                                        <button type="submit"><i
-                                                                class="fi flaticon-search"></i></button>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="header-profile-form-wrapper">
-                                        <button class="profile-toggle-btn"><i class="fi flaticon-profile"></i></button>
-                                        <div class="header-profile-content">
-                                            <ul>
-                                                <li><a href="#">Profile</a></li>
-                                                <li><a href="login.html">Login</a></li>
-                                                <li><a href="register.html">Register</a></li>
-                                            </ul>
-                                        </div>
-                                    </div> -->
+                                    
                                     <div class="close-form">
                                         <a class="theme-btn" href="donate.html">
                                             <span class="mobile">
