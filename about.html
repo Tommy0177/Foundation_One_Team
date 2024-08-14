@@ -75,12 +75,31 @@
                     display: block !important; /* Explicitly set display for small devices */
                 }
             }
+            @media (max-width: 576px) {
+                #custom-padding {
+                    padding-left: 35px !important;
+                }
+                                    
+            }
+            @media (max-width: 991px) {
+                #custom-padding {
+                    padding-left: 45px !important;
+                }
+                                    
+            }   
+            @media (max-width: 1400px) {
+                #custom-padding {
+                    padding-left: 55px !important;
+                }
+                                    
+            } 
+
         </style>
         <header id="header">
             <div class="wpo-site-header wpo-site-header-s1">
                 <nav class="navigation navbar navbar-expand-lg navbar-light">
-                    <div class="container-fluid">
-                        <div class="row align-items-center">
+                    <div class="container-fluid ">
+                        <div class="row align-items-center " id="custom-padding">
                             <div class="col-lg-4 col-md-4 col-3 d-block" >
                                 <div class="mobail-menu">
                                     <button id="navbar-toggle" type="button" class="navbar-toggler open-btn" >
@@ -91,10 +110,12 @@
                                     </button>
                                 </div>
                             </div>
+
                             
                             <div class="col-lg-4 col-md-4 col-6">
                                 <div class="navbar-header">
-                                    <a class="navbar-brand" href="index.html"><img src="assets/images/logos/logoNav.png" alt=""></a>                                </div>
+                                    <a class="navbar-brand" href="index.html"><img src="assets/images/logos/logoNav.png" alt=""></a>
+                                </div>
                             </div>
                             <div class="col-lg-2 col-md-1 col-1">
                                 <div id="navbar" class="collapse navbar-collapse navigation-holder  ">
@@ -111,22 +132,22 @@
                                             </ul>
                                         </li>
                                         
-                                        <li class="menu-item-has-children">
+                                        <li class="menu-item">
                                             <a href="entertainment.html">ArtsMusicSportsWShop</a>
                                         </li>
-                                        <li class="menu-item-has-children">
+                                        <li class="menu-item">
                                             <a href="donate.html">Donate</a>
                                         </li>
-                                        <li class="menu-item-has-children">
+                                        <li class="menu-item">
                                             <a href="companiesSupport.html">CompaniesThatSupport</a>
                                         </li>
-                                        <li class="menu-item-has-children">
+                                        <li class="menu-item">
                                             <a href="blog.html">Blog</a>
                                         </li>
-                                        <li class="menu-item-has-children">
+                                        <li class="menu-item">
                                             <a href="contact.html">Contact us</a>
                                         </li>
-                                        <li class="menu-item-has-children">
+                                        <li class="menu-item">
                                             <a href="#">Shop</a>
                                         </li>
                                     </ul>
